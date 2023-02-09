@@ -15,7 +15,7 @@ document.getElementById('search').addEventListener('click',(e)=>{
         const trains=data
 
         trains.map((train)=>{
-            if(starting===train.info.starting && destination===train.info.destination){
+            if(starting.toLowerCase()===train.info.starting.toLowerCase() && destination.toLowerCase()===train.info.destination.toLowerCase()){
 
                 results.innerHTML+=`<div class="card">
                 <div class="info" id="trainNo">${train.trainno}</div>
