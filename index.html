@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Railway_Site</title>
+    <title>Railway Website</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <form >
-        <input type="text" placeholder="From" id="starting"/>
-        <input type="text" placeholder="To" id="destination"/>
-        <!-- <input type="date"  name=""> -->
-        <button id="search">Search</button> 
-    </form>
+    <div class="main-container">
+        <div class="form-container">
+            <p id="heading">Search Trains</p>
+            <form action="">
+                <form autocomplete="off" >
+                    <div class="form-input">
+                        <p id="fromLabel"> Journey From</p>
+                        <input type="text" placeholder="From" id="starting"/>
+                    </div>
+                    <div class="form-input">
+                        <p id="fromLabel">Journey To</p>
+                        <input type="text" placeholder="To" id="destination"/>
+                    </div>
+                    <div class="form-input">
+                        <p id="fromLabel">Journey Date</p>
+                        <input type="date"  name="">
+                    </div>
+                    <button id="search">Search</button> 
+                </form>
+            </form>
+        </div>
+        <div class="header-container">
+            <div id="results">
+                <div id="berths"></div>
+            </div>
+        </div>
 
-    <div id="results">
-        <div id="berths"></div>
     </div>
-    <script src="/index.js"></script>
 </body>
+<script src="index.js"></script>
 </html>

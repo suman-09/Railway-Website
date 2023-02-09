@@ -13,7 +13,7 @@ document.getElementById('search').addEventListener('click',(e)=>{
     .then((response)=>(response.json()))
     .then((data)=>{
         const trains=data
-
+        console.log(data)
         trains.map((train)=>{
             if(starting.toLowerCase()===train.info.starting.toLowerCase() && destination.toLowerCase()===train.info.destination.toLowerCase()){
 

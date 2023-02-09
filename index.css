@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   background-image:linear-gradient(to top , rgba(0, 0, 0, 0.153) , rgba(0, 0, 0, 0.307)) , url('./images/background.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   background-attachment: fixed;
+}
+.main-container{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2vh 2vw;
+    /* margin: ; */
+}
+.form-container{
+    border: 2px solid red;
+    height: 60vh;
+    width: 30vw;
+    background-color: aliceblue;
+}
+.header-container{
+    width: 30vw;
+    height: 60vh;
+    border: 2px solid red;
+    color: white;
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+input:focus{
+    border: none;
+    border-bottom: 1px solid red;
+    outline: none;
+
+}
+#heading{
+    text-align: center;
+    font-size: 2em;
+}
+.form-input{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+/* For Screens Shorter than Laptop */
+
+@media screen and (max-width:1000px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .form-container{
+        width: 80vw;
+    }
+    .header-container{
+        width: 80vw;
+    }
+}
