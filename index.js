@@ -22,8 +22,8 @@ document.getElementById('search').addEventListener('click',(e)=>{
                 <div class="info" id="trainNo">${train.trainno}</div>
                 <div class="info" id="trainName">${train.trainname}</div>
                 <div class="info" id="timing">
-                <div class="info" id ="start">${train.timing.start}</div>
-                <div class="info" id ="end">${train.timing.end}</div>
+                <div class="info" id ="start">Arrival : ${train.timing.start}</div>
+                <div class="info" id ="end">Departure : ${train.timing.end}</div>
                 </div>
                 <div class="info" id="availibilty">
                 <div class="info" id="berth">
