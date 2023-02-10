@@ -19,24 +19,28 @@ document.getElementById('search').addEventListener('click',(e)=>{
             if(starting.toLowerCase()===train.info.starting.toLowerCase() && destination.toLowerCase()===train.info.destination.toLowerCase() && train.availability.date.includes(searchedDate.toString())){
                 const index=train.availability.date.indexOf(searchedDate)
                 results.innerHTML+=`<div class="card">
-                <div class="info" id="trainNo">${train.trainno}</div>
-                <div class="info" id="trainName">${train.trainname}</div>
+                <div class="card-header">
+                <div class="info" id="trainNo">${train.trainname} (${train.trainno})</div>
+
+                </div>
                 <div class="info" id="timing">
-                <div class="info" id ="start">Arrival : ${train.timing.start}</div>
-                <div class="info" id ="end">Departure : ${train.timing.end}</div>
+                <div class="info" id ="start"><b>Arrival | </b> ${train.info.starting} |${train.timing.start} </div>
+                <div class="info" id ="end">${train.timing.end} | ${train.info.destination} | <b> Departure</b></div>
                 </div>
                 <div class="info" id="availibilty">
-                <div class="info" id="berth">
-                    <div>${train.availability.CC[index]?"CC : "+train.availability.CC[index]:""}</div>
-                    <div>${train.availability.S2[index]?"2S : "+train.availability.S2[index]:""}</div>
-                    <div>${train.availability.SL[index]?"SL : "+train.availability.SL[index]:""}</div>
-                    <div>${train.availability.A1[index]?"1A : "+train.availability.A1[index]:""}</div>
-                    <div>${train.availability.A2[index]?"2A : "+train.availability.A2[index]:""}</div>
-                    <div>${train.availability.A3[index]?"3A : "+train.availability.A3[index]:""}</div>
+                <div class="info" id="berth-container">
+                    <div class="berth"><div class='berth-text'>CC</div><div class="berth-value">${train.availability.CC[index]?train.availability.CC[index]:"NA"}</div></div>
+                    <div class="berth"><div class='berth-text'>SL</div><div class="berth-value">${train.availability.SL[index]?train.availability.SL[index]:"NA"}</div></div>
+                    <div class="berth"><div class='berth-text'>1A</div><div class="berth-value">${train.availability.A1[index]?train.availability.A1[index]:"NA"}</div></div>
+                    <div class="berth"><div class='berth-text'>2A</div><div class="berth-value">${train.availability.A2[index]?train.availability.A2[index]:"NA"}</div></div>
+                    <div class="berth"><div class='berth-text'>3A</div><div class="berth-value">${train.availability.A3[index]?train.availability.A3[index]:"NA"}</div></div>
+                    <div class="berth"><div class='berth-text'>2S</div><div class="berth-value">${train.availability.S2[index]?train.availability.S2[index]:"NA"}</div></div>
                 </div>
                 <div class="info" id="seatsno"></div>
                 </div>
             </div>`
+            
+            
             }
     })
     })

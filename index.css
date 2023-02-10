@@ -27,9 +27,14 @@ body{
 }
 .header-container{
     width: 30vw;
-    height: 60vh;
+    
     color: white;
     margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 250, 250, 0.596);
+
+    backdrop-filter: blur(5px);
+    border-radius: 40px;
 }
 .form-input{
     font-family: cursive;
@@ -93,6 +98,57 @@ input:focus{
     color: white;
 }
 
+
+/* for dynamic divs */
+
+
+.card{
+    border-top: 15px solid blueviolet;
+    border-radius:15px ;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    padding-bottom:5px ;
+    box-shadow: 2px 2px 2px rgb(59, 56, 56);
+}
+.card-header{
+    background-color: rgb(184, 196, 233);
+    font-size: 1.1em;
+    padding: 8px;
+
+}
+
+#timing{
+    display: flex;
+    margin: 8px;  
+    justify-content: space-between;
+}
+
+#berth-container{
+    display: flex;
+    
+    justify-content: space-around;
+    margin: 2px;
+}
+.berth{
+    display: flex;
+    background-color: rgb(214, 206, 206);
+
+    margin: 2px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(226, 215, 215) ;
+}
+.berth-text{
+    background-color: rgb(209, 173, 243);
+    box-shadow: 1px 1px 1px rgb(63, 58, 65);
+    color: black;
+    font-weight: 300;
+    padding: 6px;
+}
+.berth-value{
+    font-weight: 300;
+    padding: 6px;
+}
 /* For Screens Shorter than Laptop */
 
 @media screen and (max-width:1000px) {
