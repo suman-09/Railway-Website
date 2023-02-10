@@ -10,7 +10,11 @@
 <body>
     <div class="main-container">
         <div class="form-container">
-            <p id="heading">Search Trains</p>
+           <div class="form-buttons">
+            <span class="form-header-btn">Seat Availibility</span>
+            <span class="form-header-btn">PNR Status</span>
+            <span class="form-header-btn">Book Meals</span>
+           </div>
             <form action="">
                 <form autocomplete="off" >
                     <div class="form-input">
@@ -25,11 +29,12 @@
                         <p id="fromLabel">Journey Date</p>
                         <input type="date"  name="">
                     </div>
-                    <button id="search">Search</button> 
+                    <div id="search">Search</div> 
                 </form>
             </form>
         </div>
         <div class="header-container">
+            <div id="header">Book Your Tickets with Ease from Your Home.</div>
             <div id="results">
                 <div id="berths"></div>
             </div>
