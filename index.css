@@ -31,7 +31,7 @@ body{
     color: white;
     margin: auto;
     padding: 20px;
-    background-color: rgba(255, 250, 250, 0.596);
+    background-color: rgba(255, 250, 250, 0.253);
 
     backdrop-filter: blur(5px);
     border-radius: 40px;
@@ -87,9 +87,9 @@ input:focus{
     text-align: center;
     font-size: 1.5em;
     color: white;
-    background-color: rgb(87, 87, 254);
+    background-color: rgb(215 97 45);
     margin: 5%;
-    box-shadow: 2px 2px 2px blue;
+    box-shadow: 2px 2px 2px rgb(110 59 11);
     cursor: pointer;
 }
 #header{
@@ -103,7 +103,7 @@ input:focus{
 
 
 .card{
-    border-top: 15px solid blueviolet;
+    border-top: 15px solid rgb(110 59 11);
     border-radius:15px ;
     background-color: white;
     color: black;
@@ -112,7 +112,7 @@ input:focus{
     box-shadow: 2px 2px 2px rgb(59, 56, 56);
 }
 .card-header{
-    background-color: rgb(184, 196, 233);
+    background-color: rgb(241, 190, 143);
     font-size: 1.1em;
     padding: 8px;
 
@@ -139,7 +139,7 @@ input:focus{
     box-shadow: 1px 1px 1px rgb(226, 215, 215) ;
 }
 .berth-text{
-    background-color: rgb(209, 173, 243);
+    background-color: rgb(225, 146, 50);
     box-shadow: 1px 1px 1px rgb(63, 58, 65);
     color: black;
     font-weight: 300;
